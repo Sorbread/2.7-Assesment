@@ -1,0 +1,5 @@
+beans's Points for this Tour.
+       Race 1  Race 2  Calculated Tally
+Name                                   
+apple       1       1                10
+pear        2       2                 6

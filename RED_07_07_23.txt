@@ -1,0 +1,9 @@
+Team RED Placings
+               Race 1  Race 2  Race 3  Race 4  Calculated Tally
+Name                                                           
+John Smith          1       1       4       2                13
+Tom Green           2       6       8      12                 3
+Theo Jones          8       2      23       3                 4
+Andy McDonald       5       4       5       1                 5
+Jonah Cheng         3       3       1       4                 7
+Mac Harris          4      10      45       0                 0

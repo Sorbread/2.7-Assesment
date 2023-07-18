@@ -22,9 +22,7 @@ def get_inp(question,answers=[]):
     if len(answers) == 0:
         while True:
             try:
-                response = input(question)
-                if not response in answers:
-                    raise  ValueError
+                response = input(question)               
                 return response
             except:
                 print("Please enter a valid response.")
@@ -80,3 +78,4 @@ def get_rider_information(races):
 
 # Testing
 # Ensure no negative values can be inputted
+print(get_rider_information(3))

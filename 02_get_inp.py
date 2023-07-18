@@ -32,14 +32,14 @@ def get_inp(question,answers=[]):
 
 # parameters: get_inp("enter y/n: ",["n","y"])
 # inputs: n,y,Y,Crtl+C,7
-# expected outcome: <accepted>, <accepted>, <asks again>, <asks again>, <asks again>
+# expected outcome: <accepted>, <accepted>, <accepted>, <asks again>, <asks again>
 
 # parameters: get_inp("",[])
 # inputs: y,1,Crtl+C
 # expected outcome: <accepted>, <accepted>, <asks again>
 
 # parameters: get_inp("",["y"])
-# inputs: y,n,7,Crtl+C    
+# inputs: y,n,7,Crtl+C   
 # expected outcome: <accepted>, <asks again>, <asks again>, <asks again>
 
-get_inp("",[])
+get_inp("",["n","y"])

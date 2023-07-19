@@ -69,9 +69,9 @@ def calculate_points(placing):
 # get_rider_information
 # gets each individual riders name, placing per race, and calculates points per race
 # returns dictionary in form {"Name":string,{variable number of placings per races},"Calculated Tally",integer}
-def get_rider_information(races):
+def get_rider_information(team_name,races):
     rider_dictionary = {}
-    rider_dictionary["Name"] = get_inp("Please enter a riders name: ")
+    rider_dictionary[f"Team {team_name} Placings"] = get_inp("Please enter a riders name: ")
 
     total_points = 0
     # Get information for each race
@@ -94,7 +94,7 @@ def get_rider_information(races):
 # returns formatted array, ready to be printed in form similar to [heading,paragraph,heading,paragraph]
 def prepare_print(team_name, rider_information):
     # The main heading
-    main_heading = f"Team {team_name} Placings"
+    main_heading = f"Team {team_name}"
     # Convert our data into pandas dataframe
     rider_information_dataframe = pandas.DataFrame.from_records(rider_information)
     # Set index of our dataframe
@@ -124,7 +124,7 @@ while True:
 
     # Get rider information
     for rider_index in range(riders_per_team):
-        rider_information.append(get_rider_information(race_amount))
+        rider_information.append(get_rider_information(team_name,race_amount))
 
     # Prepare the printout (array)
     printout = prepare_print(team_name, rider_information)

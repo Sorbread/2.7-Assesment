@@ -60,9 +60,9 @@ def get_int(question,min=-999,max=999):
 # get_rider_information
 # gets each individual riders name, placing per race, and calculates points per race
 # returns dictionary in form {"Name":string,{variable number of placings per races},"Calculated Tally",integer}
-def get_rider_information(races):
+def get_rider_information(team_name,races):
     rider_dictionary = {}
-    rider_dictionary["Name"] = get_inp("Please enter a riders name: ")    
+    rider_dictionary[f"Team {team_name} Placings"] = get_inp("Please enter a riders name: ")    
     
     total_points = 0
     # Get information for each race
@@ -78,4 +78,4 @@ def get_rider_information(races):
 
 # Testing
 # Ensure no negative values can be inputted
-print(get_rider_information(3))
+print(get_rider_information("Yes",3))

@@ -1,13 +1,14 @@
 # get inp
 # gets user input and checks it against optional array of possible answers
-# not recommended to use when all answers are acceptable (just use input())
 def get_inp(question,answers=[]):
     # If no answer is given, input can still return an error
     # so is put inside while True loop
     if len(answers) == 0:
         while True:
             try:
-                response = input(question)
+                response = input(question).strip()
+                if response == "":
+                    raise ValueError
                 return response
             except:
                 print("Please enter a valid response.")

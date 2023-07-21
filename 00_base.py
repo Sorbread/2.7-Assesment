@@ -37,7 +37,9 @@ def get_inp(question, answers=[]):
     if len(answers) == 0:
         while True:
             try:
-                response = input(question)
+                response = input(question).strip()
+                if response == "":
+                    raise ValueError
                 return response
             except:
                 print("Please enter a valid response.")
@@ -110,9 +112,9 @@ def prepare_print(team_name, rider_information):
 # Get race amount & riders per team
 # These values seem to be constant over all teams based on standard
 race_amount = get_int(
-    "Please enter the amount of races your teams will be competing in: ", 0
+    "Please enter the amount of races your teams will be competing in: ", 1
 )
-riders_per_team = get_int("Please enter the number of riders per team: ", 0)
+riders_per_team = get_int("Please enter the number of riders per team: ", 1)
 
 # Main program loop
 while True:

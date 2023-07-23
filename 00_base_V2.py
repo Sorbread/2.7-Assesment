@@ -126,7 +126,7 @@ while True:
     # Get rider information
     while True:
         rider_information.append(get_rider_information(team_name,race_amount))
-
+        # Ask if another rider's information should be added
         another_rider = get_inp("Would you like to enter another rider? [Y/N]: ",["y","Y","n","N"])
         if another_rider == "n" or another_rider == "N":
             break

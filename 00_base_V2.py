@@ -20,11 +20,14 @@ PLACEMENT_POINTS = {
 def get_int(question, min=-999, max=999):
     while True:
         try:
+            # Get input & convert to integer
             integer = int(input(question))
+            # Check against min and max
             if integer < min or integer > max:
                 raise ValueError
             return integer
         except:
+            # Print error & possible answers
             print(f"Please enter a valid integer between {min} and {max}.")
             continue
 
@@ -145,6 +148,5 @@ while True:
     text_file = open(filename, "w")
     for element in printout:
         print(element)
-        text_file.write(element)
-        text_file.write("\n")
+        text_file.write(f"{element}\n")
     text_file.close()

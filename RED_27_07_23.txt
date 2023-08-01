@@ -3,7 +3,7 @@ Team RED
 Team RED Placings                                                  
 John Smith              1       1       4       2                13
 Tom Green               2       6       8      12                 3
-Theo Jones              8       2      23       3                 4
+Theo Jones              2       8      23       3                 4
 Andy McDonald           5       4       5       1                 5
-Jonah Cheng             3       3       1       4                 7
+Jonah Cheong            3       3       1       4                 7
 Mac Harris              4      10      45       0                 0

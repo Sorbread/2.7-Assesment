@@ -42,5 +42,4 @@ def get_inp(question,answers=[]):
 # parameters: get_inp("",["y"])
 # inputs: y,n,7,Crtl+C   
 # expected outcome: <accepted>, <asks again>, <asks again>, <asks again>
-
-get_inp("",["n","y"])
+get_inp("enter y/n: ")

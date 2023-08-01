@@ -16,4 +16,4 @@ def prepare_print(team_name, rider_information):
     
     return [main_heading, rider_information_str]
 
-print(prepare_print("RED",[{'Name': 'David', 'Race 1': 2, 'Race 2': 3, 'Calculated Tally': 4},{'Name': 'George', 'Race 1': 3, 'Race 2': 4, 'Race 3': 4, 'Calculated Tally': 1}]))
+print(prepare_print("RED",[{'Name': 'David', 'Race 1': 2, 'Race 2': 3,'Race 3':4, 'Calculated Tally': 4},{'Name': 'George', 'Race 1': 3, 'Race 2': 4, 'Race 3': 4, 'Calculated Tally': 1}]))

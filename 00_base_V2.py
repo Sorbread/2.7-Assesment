@@ -51,6 +51,7 @@ def get_inp(question, answers=[]):
     while True:
         try:
             response = input(question)
+            # Check response against accepted answers
             if not response in answers:
                 raise ValueError
             return response

@@ -62,12 +62,12 @@ def get_int(question,min=-999,max=999):
 # returns dictionary in form {"Name":string,{variable number of placings per races},"Calculated Tally",integer}
 def get_rider_information(team_name,races):
     rider_dictionary = {}
-    rider_dictionary[f"Team {team_name} Placings"] = get_inp("Please enter a riders name: ")    
+    rider_dictionary[f"Team {team_name} Placings"] = get_inp("Please Enter a Riders Name: ")    
     
     total_points = 0
     # Get information for each race
     for i in range(races):
-        placing = get_int(f"Please enter your placing for race {i+1} (enter 0 if did not compete): ",0,MAX_PLACING)
+        placing = get_int(f"Please Enter this Riders Placing Placing For Race {i+1} (enter 0 if did not compete): ",0,MAX_PLACING)
         rider_dictionary[f"Race {i+1}"] = placing
         total_points += calculate_points(placing)
     
@@ -78,4 +78,4 @@ def get_rider_information(team_name,races):
 
 # Testing
 # Ensure no negative values can be inputted
-print(get_rider_information("Yes",3))
+print(get_rider_information("RED",3))

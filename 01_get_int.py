@@ -22,4 +22,4 @@ def get_int(question,min=-999,max=999):
 # inputs: -1,11,Crtl+C,.1
 # expected outcome: <continues>,<continues>,<asks again>, <asks again>
 
-get_int("",0,10)
+get_int("bread: ")

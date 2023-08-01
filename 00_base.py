@@ -48,6 +48,7 @@ def get_inp(question, answers=[]):
     while True:
         try:
             response = input(question)
+            # Check response against accepted answers
             if not response in answers:
                 raise ValueError
             return response
@@ -57,6 +58,7 @@ def get_inp(question, answers=[]):
                 error_text = f"such as '{answers[0]}' or '{answers[1]}'."
             else:
                 error_text = f"such as '{answers[0]}'."
+            # Prints error text
             print(f"Please provide a valid response, {error_text}")
 
 
@@ -118,6 +120,7 @@ riders_per_team = get_int("Please enter the number of riders per team: ", 1)
 
 # Main program loop
 while True:
+    # Get team name
     team_name = get_inp("Please enter your team name (or type 'xxx' to exit): ")
     if team_name == "xxx":
         break
